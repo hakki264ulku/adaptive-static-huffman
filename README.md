@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# ⭐ Adaptive & Static Huffman Coidng Simulator
+* Live (See the application running): https://adaptive-static-huffman-363c7.web.app/
+* This project is built to simulate adaptive and static huffman coding as a project for the Design and Analysis of Algorithms course.
+* To understand the project might be a bit difficult (❗) because of React related files, for the ease of understanding try to focus on AdaptiveHuffman.js, adaptiveHuffmanCoidng.js, huffmanCoding.js, StaticHuffman.js and App.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ❔ Idea Behind The Project
+* In Static Huffman Coding there is a priority queue. For every new encountered character from the input, you need to add a new node to the priority queue. Then, extract two min nodes from the queue and create a new node which includes these two as children and its frequency is sum of these two's. Add this new node to the priority queue. And repeat above steps until there is only one node in the queue. It's the root of the tree..
 
-## Available Scripts
+* In Adaptive Huffman Coding there are three main steps. Producing the tree, encoding and decoding. For producing the tree, the inputs are taken one by one so that the tree will be produced dynamically. If the new input symbol is encountered for the first time, add that to the current NYT with a new nyt. If the new input symbol is encountered before, find that in the tree and increment its weight. Update whole tree and according to increasing rule from left to right and bottom to top swap the conflicting nodes.
 
-In the project directory, you can run:
+# 🚀 Tech Stack
+* JavaScript
+* ReactJS
+* TailwindCss
 
-### `npm start`
+# 💿 How to Run Local
+```
+# Clone this repository
+$ git clone https:https://github.com/hakki264ulku/adaptive-static-huffman.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Go into the repository
+$ cd adaptive-static-huffman
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Install Dependencies (❗YOU NEED TO HAVE NODEJS installed on your local environment❗)
+$ npm install
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start to see the application in the localhost:3000
+$ npm run start
+```
