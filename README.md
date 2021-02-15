@@ -1,4 +1,4 @@
-# ⭐ Adaptive & Static Huffman Coidng Simulator
+# ⭐ Adaptive & Static Huffman Coding Simulator
 * Live (See the application running): https://adaptive-static-huffman-363c7.web.app/
 * This project is built to simulate adaptive and static huffman coding as a project for the Design and Analysis of Algorithms course.
 * To understand the project might be a bit difficult (❗) because of React related files, for the ease of understanding try to focus on AdaptiveHuffman.js, adaptiveHuffmanCoidng.js, huffmanCoding.js, StaticHuffman.js and App.js
